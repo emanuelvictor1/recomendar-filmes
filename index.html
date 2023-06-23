@@ -5,52 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recomendador de Filmes</title>
     <link rel="stylesheet" href="./css/style.css">
-    
+    <script src="https://kit.fontawesome.com/38e2598d01.js" crossorigin="anonymous"></script>    
 </head>
 <body>
-  <h1 class="titulo">Recomendador de Filmes</h1>
-
-  <div class="container--generos">
-    <div class="sub-titulo">
-      <h3>Selecione um gênero</h3>
-    </div>
-    <div class="generos">
-      <div class="generos--1">
-        <button class="genre-btn" data-genre="action">Ação</button>
-        <button class="genre-btn" data-genre="comedy">Comédia</button>
-        <button class="genre-btn" data-genre="drama">Drama</button>
-        <!-- Adicione outros botões de gênero aqui -->
-      </div>
-
-      <div class="generos--1">
-        <button class="genre-btn" data-genre="action">Ação</button>
-        <button class="genre-btn" data-genre="comedy">Comédia</button>
-        <button class="genre-btn" data-genre="drama">Drama</button>
-        <!-- Adicione outros botões de gênero aqui -->
-      </div>
-
-      <div class="generos--1">
-        <button class="genre-btn" data-genre="action">Ação</button>
-        <button class="genre-btn" data-genre="comedy">Comédia</button>
-        <button class="genre-btn" data-genre="drama">Drama</button>
-        <!-- Adicione outros botões de gênero aqui -->
-      </div>
-
-      <div class="generos--1">
-        <button class="genre-btn" data-genre="action">Ação</button>
-        <button class="genre-btn" data-genre="comedy">Comédia</button>
-        <button class="genre-btn" data-genre="drama">Drama</button>
-        <!-- Adicione outros botões de gênero aqui -->
-      </div>
-    </div>
+    <header>
+        <h1>Recomendador de Filmes</h1>
+    </header>
+    <main>
+      <section class="genre-selector">
+          <h2>Selecione um gênero:</h2>
+          <!-- Botões de gênero -->
+          <button class="genre-btn" data-genre="28">Ação</button>
+          <button class="genre-btn" data-genre="12">Aventura</button>
+          <button class="genre-btn" data-genre="99">Cinema de arte</button>
+          <button class="genre-btn" data-genre="35">Chanchada</button>
+          <button class="genre-btn" data-genre="35">Comédia</button>
+          <button class="genre-btn" data-genre="28,35">Comédia de ação</button>
+          <button class="genre-btn" data-genre="35,27">Comédia de terror</button>
+          <button class="genre-btn" data-genre="35,18">Comédia dramática</button>
+          <button class="genre-btn" data-genre="35,10749">Comédia romântica</button>
+          <button class="genre-btn" data-genre="10402">Dança</button>
+          <button class="genre-btn" data-genre="99">Documentário</button>
+          <button class="genre-btn" data-genre="99">Docuficção</button>
+          <button class="genre-btn" data-genre="18">Drama</button>
+          <button class="genre-btn" data-genre="28,53">Espionagem</button>
+          <button class="genre-btn" data-genre="37">Faroeste</button>
+          <button class="genre-btn" data-genre="14">Fantasia</button>
+          <button class="genre-btn" data-genre="14,878">Fantasia científica</button>
+          <button class="genre-btn" data-genre="878">Ficção científica</button>
+          <button class="genre-btn" data-genre="35">Filmes com truques</button>
+          <button class="genre-btn" data-genre="10752">Filmes de guerra</button>
+          <button class="genre-btn" data-genre="9648">Mistério</button>
+          <button class="genre-btn" data-genre="10402">Musical</button>
+          <button class="genre-btn" data-genre="80">Filme policial</button>
+          <button class="genre-btn" data-genre="10749">Romance</button>
+          <button class="genre-btn" data-genre="27">Terror</button>
+          <button class="genre-btn" data-genre="53">Thriller</button>
+          
+        </section>
+  </main>
+  <div class="result">
+      <section id="recommendation" class="recommendation-container">
+        <!-- Filmes recomendados -->
+      </section>
   </div>
-  <div class="container--resultado">
-    
-  </div>
-  
-
-  <div id="recommendation"></div>
-  
+  <footer>
+      <p>Desenvolvido por:<a href="https://github.com/emanuelvictor1/" style="color:white; margin-left: 5px;"> VictorRodigues</a></p>
+  </footer>
     <script src="./script.js"></script>
 </body>
 </html>
